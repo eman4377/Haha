@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dükkan Defteri</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Dükkan Defteri</h1>
+    <div id="date-nav">
+      <button onclick="prevDate()">&larr; Geri</button>
+      <span id="current-date"></span>
+      <button onclick="nextDate()">İleri &rarr;</button>
+    </div>
+    <div class="input-group">
+      <input type="number" id="income" placeholder="Gelir" />
+      <input type="number" id="expense" placeholder="Gider" />
+      <button onclick="saveData()">Kaydet</button>
+    </div>
+    <div class="summary">
+      <h3>Analiz</h3>
+      <p>Toplam Gelir: <span id="total-income">0</span> ₺</p>
+      <p>Toplam Gider: <span id="total-expense">0</span> ₺</p>
+      <p>Kalan: <span id="net">0</span> ₺</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
